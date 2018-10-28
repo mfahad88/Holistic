@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="12dp"
+    android:id="@+id/background"
+    android:background="@drawable/group_wallpaper">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/group_border"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/border"
+            android:padding="10dp">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/RelativeLayoutHeader"
+               android:layout_marginTop="20dp">
+
+               <ImageView
+                   android:layout_width="55dp"
+                   android:layout_height="50dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/malaysia_stamp"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:id="@+id/ImageViewMalaysia" />
+
+               <ImageView
+                   android:layout_width="120dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/logo"
+                   android:scaleType="fitXY"
+                   android:id="@+id/ImageViewLogo"
+                   android:layout_marginLeft="20dp"
+                   android:layout_toRightOf="@+id/ImageViewMalaysia"
+                   android:layout_alignTop="@id/ImageViewMalaysia"
+                   android:layout_alignBottom="@id/ImageViewMalaysia" />
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/organic_stamp"
+                   android:layout_toRightOf="@id/ImageViewLogo"
+                   android:layout_alignBottom="@id/ImageViewMalaysia"
+                   android:layout_alignTop="@id/ImageViewLogo"
+                   android:layout_marginLeft="20dp"
+                   />
+           </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextViewOrganic"
+                android:textColor="#66b60b"
+                android:layout_below="@id/RelativeLayoutHeader"
+                android:text="Organic Products"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextViewHealth"
+                android:textColor="#c9402a"
+                android:text="For Healthy Living"
+                android:layout_below="@id/TextViewOrganic"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_alignLeft="@id/TextViewOrganic"
+                android:layout_alignRight="@id/TextViewOrganic"
+                android:layout_alignStart="@id/TextViewOrganic" />
+
+
+            <ImageView
+                android:id="@+id/ImageViewHealth"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:layout_alignStart="@id/TextViewHealth"
+                android:layout_below="@id/TextViewHealth"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/group_health_supplements"
+                android:layout_alignLeft="@id/TextViewHealth" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/ImageViewCoffee"
+                android:layout_below="@id/TextViewHealth"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_alignEnd="@id/TextViewHealth"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/ImageViewHealth"
+                android:src="@drawable/group_coffee_beverages"
+                android:layout_alignRight="@id/TextViewHealth" />
+
+            <ImageView
+                android:id="@+id/ImageViewSkincare"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:layout_alignStart="@id/ImageViewHealth"
+                android:layout_below="@id/ImageViewHealth"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/group_skin_care"
+                android:layout_alignLeft="@id/ImageViewHealth" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/ImageViewPersonal"
+                android:layout_below="@id/ImageViewCoffee"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_alignEnd="@id/TextViewHealth"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/ImageViewSkincare"
+                android:src="@drawable/group_personal_care"
+                android:layout_alignRight="@id/ImageViewHealth" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
